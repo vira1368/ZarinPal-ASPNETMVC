@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "تائید تراکنش";
+}
+
+<h2>صفحه تائید تراکنش</h2>
+
+<div>
+    @if (ViewBag.RefId != null)
+    {
+        <div class="alert alert-success text-center">
+            <h3>تراکنش با موفقیت انجام شد.</h3>
+        </div>
+        <p>@ViewBag.RefId</p>
+    }
+    else
+    {
+        <div class="alert alert-danger text-center">
+            <h3>تراکنش با شکست مواجه شد.</h3>
+        </div>
+        <p>@ViewBag.Message</p>
+    }
+</div>
